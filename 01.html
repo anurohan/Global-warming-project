@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Warming Crisis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#data" class="nav-link">Data</a>
+            <a href="#causes" class="nav-link">Causes</a>
+            <a href="#effects" class="nav-link">Effects</a>
+            <a href="#action" class="nav-link">Take Action</a>
+        </div>
+    </nav>
+
+    <div class="parallax-container" id="home">
+        <div class="parallax-bg"></div>
+        <div class="climate-particles" id="particles"></div>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Global Warming Crisis</h1>
+                <p class="hero-subtitle">Our Planet's Temperature is Rising at an Alarming Rate</p>
+                <div class="action-buttons">
+                    <button class="action-button primary">Learn More</button>
+                    <button class="action-button secondary">Take Action Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="data" class="data-section">
+        <div class="container">
+            <h2>Global Temperature Data</h2>
+            <div class="charts-container">
+                <div class="chart-wrapper">
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="emissionsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="causes" class="info-section">
+        <div class="container">
+            <h2>Causes of Global Warming</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=800&q=80" alt="Greenhouse Gases">
+                    <div class="card-content">
+                        <h3>Greenhouse Gas Emissions</h3>
+                        <p>The burning of fossil fuels releases large amounts of CO2 and other greenhouse gases.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1615411640812-5c2c38ea5daa?auto=format&fit=crop&w=800&q=80" alt="Deforestation">
+                    <div class="card-content">
+                        <h3>Deforestation</h3>
+                        <p>Loss of forests reduces Earth's capacity to absorb CO2 from the atmosphere.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1471958680802-1345a694ba6d?auto=format&fit=crop&w=800&q=80" alt="Industrial Activities">
+                    <div class="card-content">
+                        <h3>Industrial Activities</h3>
+                        <p>Manufacturing processes release various greenhouse gases including methane.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=80" alt="Agricultural Practices">
+                    <div class="card-content">
+                        <h3>Agricultural Practices</h3>
+                        <p>Modern farming and livestock production contribute significantly to emissions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="effects" class="info-section dark">
+        <div class="container">
+            <h2>Effects of Global Warming</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=800&q=80" alt="Rising Sea Levels">
+                    <div class="card-content">
+                        <h3>Rising Sea Levels</h3>
+                        <p>Melting polar ice causes sea levels to rise, threatening coastal areas.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1527482797697-8795b05a13fe?auto=format&fit=crop&w=800&q=80" alt="Extreme Weather">
+                    <div class="card-content">
+                        <h3>Extreme Weather</h3>
+                        <p>Increased frequency of hurricanes, droughts, and floods.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=800&q=80" alt="Loss of Biodiversity">
+                    <div class="card-content">
+                        <h3>Loss of Biodiversity</h3>
+                        <p>Many species face extinction due to habitat changes.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Health Risks">
+                    <div class="card-content">
+                        <h3>Health Risks</h3>
+                        <p>Increased health risks from heat waves and disease spread.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facts" class="facts-section">
+        <div class="container">
+            <h2>Key Facts</h2>
+            <div class="facts-carousel">
+                <div class="fact-slide active">
+                    <h3>Arctic Ice Melting</h3>
+                    <p>The Arctic is losing 13% of its sea ice every decade</p>
+                </div>
+                <div class="fact-slide">
+                    <h3>Temperature Rise</h3>
+                    <p>Earth's average temperature has increased by 1.1°C since pre-industrial times</p>
+                </div>
+                <div class="fact-slide">
+                    <h3>Sea Level Rise</h3>
+                    <p>Global sea levels have risen about 8-9 inches since 1880</p>
+                </div>
+                <div class="fact-slide">
+                    <h3>CO₂ Levels</h3>
+                    <p>Current CO₂ levels are higher than at any point in the past 800,000 years</p>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="action" class="action-section">
+        <div class="container">
+            <h2>Take Action Now</h2>
+            <p>Every small action counts. Join the global movement to combat climate change.</p>
+            <a href="https://www.un.org/en/climatechange" target="_blank" rel="noopener noreferrer" class="cta-button">
+                Join the Movement
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
